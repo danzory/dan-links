@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #121212;
+            background-color: #121212; /* רקע שחור עמוק */
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -17,17 +17,19 @@
         }
 
         .profile-img {
-            width: 100px;
-            height: 100px;
+            width: 110px;
+            height: 110px;
             border-radius: 50%;
-            border: 3px solid #007bff;
+            border: 3px solid #007bff; /* כחול מותג */
             margin-bottom: 15px;
             object-fit: cover;
+            background-color: #333;
         }
 
         h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 5px;
+            font-weight: bold;
         }
 
         p {
@@ -35,6 +37,8 @@
             color: #b0b0b0;
             margin-bottom: 30px;
             text-align: center;
+            max-width: 300px;
+            line-height: 1.4;
         }
 
         .links-container {
@@ -48,47 +52,54 @@
         .link-card {
             background-color: #1e1e1e;
             border: 1px solid #333;
-            padding: 15px;
+            padding: 16px;
             text-align: center;
             border-radius: 12px;
             text-decoration: none;
             color: white;
-            font-weight: bold;
-            transition: transform 0.2s, background-color 0.2s;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: block;
         }
 
         .link-card:hover {
-            transform: scale(1.02);
+            transform: translateY(-3px);
             background-color: #2a2a2a;
             border-color: #007bff;
+            box-shadow: 0 5px 15px rgba(0,123,255,0.2);
         }
 
         .footer {
-            margin-top: 50px;
-            font-size: 0.8rem;
-            color: #666;
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #555;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <img src="https://via.placeholder.com/100" alt="דן דוברובסקי" class="profile-img">
+    <img src="https://github.com/danzory.png" alt="דן דוברובסקי" class="profile-img">
 
     <h1>דן דוברובסקי</h1>
-    <p>מאמן כושר אישי | מומחה להיפרטרופיה ומדע האימון</p>
+    <p>פיזיולוג מאמץ ומאמן כושר אישי<br>מייסד Armor Builder</p>
 
     <div class="links-container">
-        <a href="https://wa.me/972XXXXXXXXX" class="link-card" target="_blank">💬 שלחו לי הודעה בוואטסאפ</a>
+        
+        <a href="https://wa.me/972528710902" class="link-card" target="_blank">💬 שלחו לי הודעה בוואטסאפ</a>
 
-        <a href="https://yourusername.github.io/armor-builder" class="link-card" target="_blank">🛡️ כניסה ל-Armor Builder</a>
+        <a href="https://danzory.github.io/Armor-Builder" class="link-card" target="_blank">🛡️ כניסה למערכת מתאמנים</a>
 
-        <a href="#" class="link-card" target="_blank">📝 שאלון הצטרפות לאימונים</a>
+        <a href="mailto:shortofdan@gmail.com" class="link-card">📧 צרו קשר במייל</a>
 
-        <a href="#" class="link-card" target="_blank">📸 עקבו אחרי באינסטגרם</a>
+        <a href="#" class="link-card" target="_blank">📝 שאלון הצטרפות (ליווי אישי)</a>
+
+        <a href="https://instagram.com/" class="link-card" target="_blank">📸 עקבו אחרי באינסטגרם</a>
+
     </div>
 
     <div class="footer">
-        © 2026 Armor Builder by Coach Dan Dubrovsky
+        © 2026 Armor Builder by Dan Dubrovsky
     </div>
 
 </body>
